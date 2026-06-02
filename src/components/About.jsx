@@ -10,27 +10,31 @@ const About = () => {
         <div className="about-text">
           <h2 className="section-title text-left">About Me</h2>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum ut aperiam
-            quia dignissimos corrupti, hic fugit, eveniet reprehenderit possimus voluptatum tenetur 
-            provident consequatur itaque id rerum? Quo quaerat ab.
+          I enjoy exploring new technologies, solving problems, and turning ideas into meaningful digital experiences. I am committed to continuous learning and personal growth, always striving to improve my skills and take on new challenges.
+
           </p>
           
           <div className="stats">
             <div className="stat-item">
-              <h3>5+</h3>
-              <p>Education<br/>Years Experience</p>
+              <h3>2nd year</h3>
+              <p>B.Sc<br/>Student</p>
             </div>
             <div className="stat-item">
-              <h3>10+</h3>
-              <p>Years Experience</p>
+              <h3>full stack</h3>
+              <p>DEvelopment Intern</p>
             </div>
             <div className="stat-item">
-              <h3>100+</h3>
-              <p>Projects Completed</p>
+              <h3>Passionate</h3>
+              <p>About Learning</p>
             </div>
           </div>
           
-          <button className="btn btn-outline" style={{marginTop: '20px'}}>Learn More</button>
+          <div style={{display: 'flex', gap: 8, marginTop: 20}}>
+            <button className="btn btn-primary" onClick={() => {
+              // Open a standalone about page that uses the same UI/theme
+              window.open('/about-page', '_blank');
+            }}>Explore</button>
+          </div>
         </div>
       </div>
     </section>

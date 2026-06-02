@@ -1,41 +1,43 @@
 import React from 'react';
 
 const projectsData = [
+  
+  
   {
-    title: 'E-Commerce Platform',
-    desc: 'Full-featured e-commerce platform with payment gateway.',
+    title: 'Personal Portfolio Website',
+    desc: 'Designed and developed a responsive portfolio website to showcase skills, education, and career goals.',
+    tags: ['React', 'CSS', 'JavaScript'],
+    image: 'https://i.pinimg.com/736x/45/1c/97/451c9789f59bf2d484b8b29ae4e19ac7.jpg'
+  },
+  {
+    title: 'Student Management System',
+    desc: 'Created a web-based system for managing student information, attendance, and academic records.',
     tags: ['React', 'Node.js', 'MongoDB'],
-    image: 'https://images.unsplash.com/photo-1557821552-17105176677c?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=60'
+    image: 'https://i.pinimg.com/1200x/0e/43/06/0e43062e34c6f625e23d084fb9c7520c.jpg'
   },
   {
-    title: 'Fitness Tracker App',
-    desc: 'Mobile fitness app with workout plans.',
-    tags: ['React Native', 'Firebase'],
-    image: 'https://images.unsplash.com/photo-1526506118029-79a617631379?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=60'
+    title: 'E-Commerce Website UI',
+    desc: 'Built a modern and responsive online shopping interface with product listings and cart functionality.',
+    tags: ['React', 'Bootstrap', 'JavaScript'],
+    image: 'https://i.pinimg.com/736x/61/a5/aa/61a5aa44fd5a64c3a9bc5408b2a1e300.jpg'
   },
   {
-    title: 'AI Content Generator',
-    desc: 'AI-powered content generation tool.',
-    tags: ['Vue', 'OpenAI', 'Tailwind'],
-    image: 'https://images.unsplash.com/photo-1677442136019-21780ecad995?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=60'
+    title: 'Task Management App',
+    desc: 'Developed a task management application to organize daily activities and improve productivity.',
+    tags: ['React', 'Firebase', 'CSS'],
+    image: 'https://i.pinimg.com/1200x/bd/7d/a0/bd7da0a8bf5a73407a1ceebb878a6f32.jpg'
   },
   {
-    title: 'Crypto Dashboard',
-    desc: 'Real-time crypto tracking dashboard.',
-    tags: ['Next.js', 'Chart.js'],
-    image: 'https://images.unsplash.com/photo-1605792657660-596af9009e82?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=60'
+    title: 'Weather Forecast App',
+    desc: 'Created a weather application that displays current weather conditions using API integration.',
+    tags: ['JavaScript', 'API', 'HTML'],
+    image: 'https://i.pinimg.com/1200x/6b/fc/ec/6bfcece1da8bb25a6d6c0a7ad5511d6d.jpg'
   },
   {
-    title: 'Task Management',
-    desc: 'Collaborative task management system.',
-    tags: ['Laravel', 'Vue.js'],
-    image: 'https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=60'
-  },
-  {
-    title: 'Real Estate Platform',
-    desc: 'Virtual tour real estate platform.',
-    tags: ['React', 'Three.js'],
-    image: 'https://images.unsplash.com/photo-1560518883-ce09059eeffa?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=60'
+    title: 'Online Learning Platform',
+    desc: 'Designed an educational platform interface for browsing courses and tracking learning progress.',
+    tags: ['React', 'UI/UX', 'CSS'],
+    image: 'https://i.pinimg.com/736x/87/2c/61/872c61df3e75fafaf50b2abfdeb7cc0a.jpg'
   }
 ];
 
@@ -59,10 +61,7 @@ const Projects = () => {
                   <span className="tag" key={i}>{tag}</span>
                 ))}
               </div>
-              <div className="project-actions">
-                <button className="btn btn-outline btn-sm">Code</button>
-                <button className="btn btn-primary btn-sm">Demo</button>
-              </div>
+              {/* Removed Code/Demo buttons per request */}
             </div>
           </div>
         ))}
